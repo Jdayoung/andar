@@ -1,0 +1,17 @@
+@mixin elip($line,$lh) {
+    //한줄 말줄임
+    
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    line-height: $lh+px;
+    
+
+    @if $line > 1 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        max-height: $line*$lh+px;
+    } @else {
+        white-space: nowrap;
+    }
+}

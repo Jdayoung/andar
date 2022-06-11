@@ -1,0 +1,521 @@
+@import './mixin';
+.sc_visual {
+    background: #f00;
+    height: calc(100vh - 140px);
+    //@ 필수 >> 부모 기준으로 높이잡기
+    .swiper {
+        height: 100%;
+    }
+    .swiper-slide {
+        img {width: 100%; height: 100%; object-fit: cover;}
+        .txt_box {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            display: inline-block;
+            box-sizing: border-box;
+            color: #fff;
+            padding: 100px 30px;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1.25;
+                letter-spacing: -1.3px;
+            }
+            p {
+                    font-size: 17px;
+                    line-height: 1.4;
+                    letter-spacing: -0.5px;
+                    padding-top: 15px;
+                }
+        }
+        
+    }
+    .swiper-pagination {
+        bottom: 37px;
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 2px;
+            border-radius: 0;
+            background: #fff;
+            margin: 0;
+        }
+    }
+}
+
+
+//prd_list 
+
+.prd_list {
+    .item {
+        a {
+            display: block;
+            &.imgbox {
+                img {width: 100%;}
+            }
+            &.txtbox {
+                padding: 15px 10px 0;
+                .review {
+                    color: #8e1f29;
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-weight: 600; 
+                }
+                .prd_title {
+                    margin: 10px 0;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: -0.05em;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    white-space: normal;
+                    width: 100%;
+                    word-wrap: break-word;
+                }
+                .p_box {
+                    .sale_percen {
+                        color: #8e1f29;
+                        font-weight: 500;
+                        margin-right: 5px;
+                    }
+                    .price {
+                        font-size: 15px;
+                    }
+                    .sale_price {
+                        font-size: 13px;
+                        color: #8d8d8d
+                    }
+                }
+                .color {
+                    font-size: 13px;
+                    line-height: 11px;
+                    letter-spacing: -0.05em;
+                    font-weight: 500;
+                    padding: 9px 0;
+                    display: block;
+                    color: #999;
+                }
+                .new_sale {
+                    display: inline-block;
+                    border: 1px solid rgba(142,31,41,0.5);
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    padding: 5px 6px;
+                    line-height: 1;
+                    font-size: 10px;
+                    color: #8e1f28;
+                }
+            }
+        }
+    }
+}
+
+
+//공통타이틀
+.title {
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+.sc_best {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            width: calc(50% - 5px);
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.b_plus {
+    padding: 0 38px;
+    margin-bottom: 65px;
+    a {
+        display: block;
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        border: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        background: #fff;
+        font-size: 15px;
+        color: #222;
+        font-weight: 500;
+        text-align: center;
+        .arrow {
+            background: url(../images/arrow.png);
+            width: 19px;
+            height: 19px;
+            background-size: 19px auto;
+            display: inline-block;
+            background-position: center;
+            vertical-align: text-bottom;
+        }
+    }
+}
+
+//ad
+.ad {
+    margin-bottom: 100px;
+    a {
+        display: block;
+        img {width: 100%;}
+
+    }
+}
+
+//sc_lookbook
+
+.sc_lookbook {
+    .group_title {
+        .img_box {
+            img {width: 100%;}
+        }
+        .title_box {
+            padding: 20px 16px 20px;
+            box-sizing: border-box;
+            color: #333;
+            letter-spacing: -0.05em;
+            h2 {
+                font-size: 26px;
+                line-height: 35px;
+                
+                font-weight: 700;
+            }
+            p {
+                padding: 14px 0 28px;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+            .btn_all {
+                display: inline-block;
+                background-color: #1e1e1e;
+                border-radius: 2px;
+                color: #fff;
+                padding: 8px 47px 8px 18px;
+                font-size: 14px;
+                line-height: 20px;
+                background-image: url(https://m.andar.co.kr/common/mo/Icon_move.png);
+                background-repeat: no-repeat;
+                background-size: 15px auto;
+                background-position: calc(100% - 18px) center;
+            }
+        }
+    }
+    .prd_list {
+        padding: 0 16px;
+       
+        li {
+            padding: 20px 0;
+            &+li {
+                border-top: 1px solid #eee;
+            }
+        }
+        .item {
+            display: flex;
+            align-items: flex-end;
+            .imgbox {
+                width: 110px;
+            }
+            .txtbox {
+                padding: 0 28px;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+
+.l_book .t_book ul {
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+.l_book .t_book ul li {
+    padding: 20px 0;
+    overflow: hidden;
+}
+.l_book .t_book ul li img {
+    width: 110px;
+    float: left;
+    margin-right: 28px;
+}
+.l_book .txtbox_02 {
+    padding: 65px 28px 0;
+    width: calc(100% - 88px);
+}
+.l_book .txtbox_02 .review{
+    font-size: 13px;
+}
+
+.l_book .txtbox_02 h3 {
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+.l_book .txtbox_02 .sale_percen {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.l_book .txtbox_02 .price {
+    font-size: 15px;
+}
+.l_book .txtbox_02 .sale_price {
+    font-size: 13px;
+}
+.l_book .txtbox_02 .color {
+    font-size: 13px;
+    padding-top: 9px;
+    display: block;
+}
+
+
+.sc_brand {
+    padding: 56px 20px;
+    background-color: #C86733;
+    margin: 20px 0;
+    color: #fff;
+}
+.sc_brand h2 {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+.sc_brand h3 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+.sc_brand span {
+    display: block;
+    padding: 10px 0 5px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.sc_brand .btn_all {
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+
+.sc_cate {
+    position: relative;
+    .prd_list {
+        padding-left: 15px;
+        .item {
+            width: 860px;
+            margin-right: 10px;
+            img {width: 100%;}
+            a {
+                display: block;
+                &.imgbox {
+                    img {width: 100%;}
+                }
+                &.txtbox {
+                    padding: 15px 10px 0;
+                    box-sizing: border-box;
+                    .review {
+                        display: block;
+                        color: #8e1f29;
+                        font-size: 13px;
+                        line-height: 13px;
+                        font-weight: normal; 
+                    }
+                    p {
+                        color: #333;
+                        font-size: 14px;
+
+                        overflow: hidden;
+                        @include elip(2,20);
+                    }
+
+                    .p_box {
+                        .sale_percen {
+                            color: #8e1f29;
+                            font-weight: 500;
+                            margin-right: 5px;
+                        }
+                        .price {
+                            font-size: 15px;
+                        }
+                        .sale_price {
+                            font-size: 13px;
+                            color: #8d8d8d
+                        }
+                    }
+                    .color {
+                        font-size: 13px;
+                        line-height: 11px;
+                        letter-spacing: -0.05em;
+                        font-weight: 500;
+                        padding: 9px 0;
+                        display: block;
+                        color: #999;
+                    }
+                    .new_sale {
+                        display: inline-block;
+                        border: 1px solid rgba(142,31,41,0.5);
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        padding: 5px 6px;
+                        line-height: 1;
+                        font-size: 10px;
+                        color: #8e1f28;
+                    }
+                }
+            }
+        }
+    }
+    .all {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        position: absolute;
+        top: 55px;
+        right: 5%;
+    }
+    .all span {
+        display: inline-block;
+        width: 15px;
+        height: 11px;
+        background: url(../images/plus.png);
+        background-size: 15px 11px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 3px;
+     }
+}
+
+.slide {
+    position: relative;
+}
+.slide .title {
+    padding: 30px 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 600;
+}
+.swiper.mySwiper {
+    margin-left: 20px;
+}
+.swiper.mySwiper .swiper-slide {}
+.swiper.mySwiper .swiper-slide img {
+    width: 100%;
+ }
+ .slide .all {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    position: absolute;
+    top: 30px;
+    right: 5%;
+ }
+ .slide .all span {
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    background: url(../images/plus.png);
+    background-size: 15px 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+ }
+
+
+
+
+
+
+ .sc_members {
+    background: url(../images/f_banner.jpg) no-repeat;
+    padding: 65px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;  
+    margin-top: 100px;
+    .txt_box {
+        color: #fff;
+        h2 {
+            font-size: 26px;
+            font-weight: bold;
+        } 
+        p {
+            font-size: 15px;
+            line-height: 1.4;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            padding: 13px 0 30px;
+            box-sizing: border-box;
+         }
+         .btn_all {
+            border: 1px solid #fff;
+            padding: 7px 25px 8px;
+            color: #fff;
+            font-size: 15px;
+            line-height: 18px;
+            display: inline-block;
+         } 
+    }
+ }
+ .sc_shop {
+     background: url(../images/f_banner02.jpg) no-repeat;
+     padding: 65px 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    .txt_box {
+        color: #fff;
+        h2 {
+            font-size: 26px;
+            font-weight: bold;
+        } 
+        p {
+            font-size: 15px;
+            line-height: 1.4;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            padding: 13px 0 30px;
+            box-sizing: border-box;
+         }
+         .btn_all {
+            border: 1px solid #fff;
+            padding: 7px 25px 8px;
+            color: #fff;
+            font-size: 15px;
+            line-height: 18px;
+            display: inline-block;
+         } 
+    }
+ }
