@@ -1,6 +1,5 @@
 @import './mixin';
 .sc_visual {
-    background: #f00;
     height: calc(100vh - 140px);
     //@ 필수 >> 부모 기준으로 높이잡기
     .swiper {
@@ -132,6 +131,14 @@
         li {
             width: calc(50% - 5px);
             padding-bottom: 50px;
+        }
+        .imgbox {
+            position: relative;
+            .new {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
     }
 }
