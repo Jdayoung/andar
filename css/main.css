@@ -146,16 +146,6 @@
   padding-bottom: 50px;
 }
 
-.sc_best ul .imgbox {
-  position: relative;
-}
-
-.sc_best ul .imgbox .new {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .b_plus {
   padding: 0 38px;
   margin-bottom: 65px;
